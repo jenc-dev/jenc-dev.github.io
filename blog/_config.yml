@@ -1,5 +1,6 @@
 title: Au-delà du mental
 description: Blog de préparation mentale
 baseurl: "/blog"
+url: "https://jenc-dev.github.io"
 # Paramètres de génération
 markdown: kramdown
