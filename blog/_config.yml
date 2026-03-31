@@ -1,0 +1,5 @@
+title: Au-delà du mental
+description: Blog de préparation mentale
+baseurl: "/blog"
+# Paramètres de génération
+markdown: kramdown
