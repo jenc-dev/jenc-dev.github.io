@@ -3,84 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Blog - Au-delà du mental</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Zoom Au-delà du Mental - Articles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        /* Polices et couleurs inspirées du template */
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #021e38 0%, #043869 50%, #0b75d9 100%);
-            color: #333;
-            min-height: 100vh;
-        }
-        .blog-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .blog-header {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .blog-header h1 {
-            color: #2c3e50;
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.75;
+            color: #555;
             margin: 0;
+            padding: 0;
+            background-color: #fff;
         }
-        .blog-post-preview {
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            padding: 20px;
+
+        .header {
+            border-top: 4px solid #e74c3c;
+            padding: 20px 0;
+            background-color: #fff;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .site-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #222;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .site-subtitle {
+            font-size: 1.2rem;
+            color: #777;
+            margin: 5px 0 0;
+            font-weight: 400;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .article-card {
+            display: flex;
+            margin-bottom: 60px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 40px;
+        }
+
+        .article-text {
+            flex: 1;
+            padding-right: 30px;
+        }
+
+        .article-image {
+            flex: 1;
+        }
+
+        .article-image img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .article-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #222;
+            margin: 0 0 15px;
+            line-height: 1.2;
+        }
+
+        .article-excerpt {
+            font-size: 1.1rem;
+            color: #666;
             margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            line-height: 1.6;
         }
-        .blog-post-preview h2 {
-            color: #2c3e50;
-            margin-top: 0;
-        }
-        .date {
-            color: #7f8c8d;
-            font-style: italic;
-            margin-bottom: 10px;
-        }
+
         .read-more {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
             display: inline-block;
-            margin-top: 10px;
+            background-color: transparent;
+            color: #e74c3c;
+            border: 2px solid #e74c3c;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s ease;
         }
+
         .read-more:hover {
-            text-decoration: underline;
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .article-card {
+                flex-direction: column;
+            }
+            .article-text {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+            .site-title {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="blog-container">
-        <div class="blog-header">
-            <h1>Mes articles sur la préparation mentale et le leadership</h1>
-            <p>Auteur : Jennifer Charvolin</p>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="site-title">Zoom Au-delà du Mental</h1>
+            <p class="site-subtitle">Articles de Jennifer Charvolin</p>
         </div>
+    </header>
 
+    <main class="main-content">
         <!-- Article 1 -->
-        <div class="blog-post-preview">
-            <h2><a href="/articles/article1.html">3 techniques pour rester calme sous pression</a></h2>
-            <p class="date">Publié le 31 mars 2026</p>
-            <p class="auteur">Par Jennifer Charvolin</p>
-            <p>Imaginez que vous êtes en réunion stratégique, le projet est à 500k€, et soudain... Votre cerveau décide de vous jouer un mauvais tour.</p>
-            <a href="/articles/article1.html" class="read-more">Lire la suite →</a>
-        </div>
+        <article class="article-card">
+            <div class="article-text">
+                <h2 class="article-title">3 techniques pour rester calme sous pression</h2>
+                <p class="article-excerpt">
+                    Imaginez que vous êtes en réunion stratégique, le projet est à 500k€, et soudain...
+                    Votre cerveau décide de vous jouer un mauvais tour. Les mains qui tremblent,
+                    la boule au ventre, l'impression que tout le monde voit que vous êtes en flip.
+                </p>
+                <a href="/articles/article1.html" class="read-more">Lire plus</a>
+            </div>
+            <div class="article-image">
+                <img src="https://via.placeholder.com/600x400/eeeeee/cccccc?text=Image+article" alt="Illustration article">
+            </div>
+        </article>
 
-        <!-- Ajoute d'autres articles ici plus tard -->
-        <!-- Exemple pour un 2ème article :
-        <div class="blog-post-preview">
-            <h2><a href="/articles/article2.html">Titre du 2ème article</a></h2>
-            <p class="date">Publié le [date]</p>
-            <p>[Extrait court]</p>
-            <a href="/articles/article2.html" class="read-more">Lire la suite →</a>
-        </div>
-        -->
-    </div>
+        <!-- Ajoute d'autres articles ici avec la même structure -->
+    </main>
 </body>
 </html>
