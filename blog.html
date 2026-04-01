@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoom Au-delà du Mental - Articles</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Polices et couleurs inspirées du template */
+        /* Polices et couleurs */
         body {
             font-family: 'Source Sans Pro', sans-serif;
             line-height: 1.75;
@@ -16,40 +16,89 @@
             background-color: #fff;
         }
 
+        /* Header avec menu */
         .header {
             border-top: 4px solid #e74c3c;
-            padding: 20px 0;
+            padding: 15px 0;
             background-color: #fff;
+            position: relative;
         }
 
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Titre stylisé */
+        .site-title-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .site-title {
-            font-family: 'Raleway', sans serif;
-            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
             font-weight: 700;
             color: #222;
             margin: 0;
             line-height: 1.2;
+            position: relative;
+        }
+
+        .site-title::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #e74c3c;
         }
 
         .site-subtitle {
+            font-family: 'Raleway', sans-serif;
             font-size: 1.2rem;
             color: #777;
             margin: 5px 0 0;
             font-weight: 400;
         }
 
+        /* Menu de navigation */
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: #555;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: 'Raleway', sans-serif;
+            padding: 8px 15px;
+            border: 2px solid #e74c3c;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        /* Contenu principal */
         .main-content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
+        /* Cartes d'articles */
         .article-card {
             display: flex;
             margin-bottom: 60px;
@@ -73,7 +122,7 @@
         }
 
         .article-title {
-            font-family: 'Raleway', sans serif;
+            font-family: 'Raleway', sans-serif;
             font-size: 2.2rem;
             font-weight: 700;
             color: #222;
@@ -107,15 +156,23 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .site-title {
+                font-size: 2.2rem;
+                text-align: center;
+            }
+
             .article-card {
                 flex-direction: column;
             }
+
             .article-text {
                 padding-right: 0;
                 margin-bottom: 20px;
-            }
-            .site-title {
-                font-size: 2rem;
             }
         }
     </style>
@@ -123,7 +180,14 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <h1 class="site-title">Zoom Au-delà du Mental</h1>
+            <div class="site-title-container">
+                <h1 class="site-title">Zoom<br>Au-delà du Mental</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="/index.html" class="nav-link">Revenir au site</a>
+            </nav>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
             <p class="site-subtitle">Articles de Jennifer Charvolin</p>
         </div>
     </header>
@@ -141,11 +205,9 @@
                 <a href="/articles/article1.html" class="read-more">Lire plus</a>
             </div>
             <div class="article-image">
-                <img src="what is PM.png" alt="Illustration article">
+                <img src="images/What is PM.png" alt="Illustration article">
             </div>
         </article>
-
-        <!-- Ajoute d'autres articles ici avec la même structure -->
     </main>
 </body>
 </html>
