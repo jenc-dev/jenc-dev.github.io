@@ -100,10 +100,10 @@ input, select, textarea {
 
 	body {
 		background-color: ##3a5f4d;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(135deg, #6b7c58 6%, #3a5f4d 50%, #a8c686 100%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(135deg, #6b7c58 6%, #3a5f4d 50%, #a8c686 100%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(135deg, #6b7c58 6%, #3a5f4d 50%, #a8c686 100%);
-		background-image: url("images/overlay.png"), linear-gradient(135deg, #6b7c58 6%, #3a5f4d 50%, #a8c686 100%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(135deg, #6c7b5a 0%, #4a5d3e 40%, #7a6b4d 80%, #5a6d4a 100%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(135deg, #6c7b5a 0%, #4a5d3e 40%, #7a6b4d 80%, #5a6d4a 100%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(135deg, #6c7b5a 0%, #4a5d3e 40%, #7a6b4d 80%, #5a6d4a 100%);
+		background-image: url("images/overlay.png"), linear-gradient(135deg, #6c7b5a 0%, #4a5d3e 40%, #7a6b4d 80%, #5a6d4a 100%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
