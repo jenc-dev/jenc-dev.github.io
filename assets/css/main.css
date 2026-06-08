@@ -3839,3 +3839,58 @@ input, select, textarea {
     margin-bottom: 1em; /* Espace entre les paragraphes */
     font-size: 1.1em; /* Taille du texte */
 }
+/* ===== **NOUVEAUX STYLES POUR #HEADER (photo + texte) ===== */
+#header {
+    **padding: 2em 1em;**
+    **text-align: center;**
+    background-color: #935d8c;
+    **position: relative;**
+    **overflow: hidden;**
+}
+
+**#header .profile-image {
+    margin-bottom: 1.5em;
+    text-align: center;
+}**
+
+**#header .profile-image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+}**
+
+**#header .profile-text {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ffffff;
+    line-height: 1.6;
+}**
+
+**#header .profile-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+}**
+
+**#header .profile-text p {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.9);
+}**
+
+/* **Adaptation mobile pour #header** */
+@media screen and (max-width: 736px) {
+    **#header .profile-image img {
+        max-width: 250px;
+    }**
+    **#header .profile-text h1 {
+        font-size: 2em;
+    }**
+    **#header .profile-text p {
+        font-size: 1em;
+    }**
+}
+/* ===== FIN DES NOUVEAUX STYLES ===== */
