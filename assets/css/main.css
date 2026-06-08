@@ -3794,11 +3794,10 @@ input, select, textarea {
 }
 
 .logo {
-    height: 24px; /* Taille similaire à un emoji dans un h1 */
+    height: 40px; 
     width: auto; /* Garde les proportions */
     display: inline-block; /* Comportement en ligne */
     vertical-align: middle; /* Alignement vertical */
     margin: 0 0.2em; /* Espacement horizontal */
     opacity: 0.8;
-    filter: grayscale(100%); /* Optionnel : passe en noir et blanc pour un style sobre */
 }
