@@ -500,3 +500,81 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width:
+
+#header.alt {
+    padding: 1em 5em 4em 5em; /* Espace réduit pour éviter les marges trop grandes */
+    text-align: center;
+    position: relative;
+    overflow: visible;
+}
+
+/* Logo (conservé) */
+#header.alt .logo {
+    display: block;
+    margin: 0 auto 1.5em; /* Espace sous le logo */
+}
+
+#header.alt .logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+/* Photo de profil */
+#header.alt .profile-image {
+    margin: 0 auto 2em; /* Espace sous la photo */
+    max-width: 350px; /* Largeur max du conteneur */
+}
+
+#header.alt .profile-image .profile-img {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: white; /* Fond blanc pour la photo */
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Texte sous la photo */
+#header.alt .header-text {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+#header.alt .header-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+}
+
+#header.alt .header-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#header.alt .header-text p {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Adaptation mobile */
+@media screen and (max-width: 736px) {
+    #header.alt .profile-image {
+        max-width: 280px;
+    }
+    #header.alt .header-text h1 {
+        font-size: 2em;
+    }
+    #header.alt .header-text h2 {
+        font-size: 1.25em;
+    }
+    #header.alt .header-text p {
+        font-size: 1em;
+    }
+}
