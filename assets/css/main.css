@@ -3783,3 +3783,19 @@ input, select, textarea {
 			}
 
 		}
+/* CSS pour les logos des partenaires */
+.logos-partenaires {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    opacity: 0.8;
+}
