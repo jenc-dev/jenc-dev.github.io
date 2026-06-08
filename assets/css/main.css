@@ -3783,21 +3783,4 @@ input, select, textarea {
 			}
 
 		}
-.logos-partenaires {
-    display: flex; /* Utilise flexbox pour un alignement en ligne */
-    flex-wrap: wrap; /* Permet le retour à la ligne */
-    justify-content: center; /* Centre les logos horizontalement */
-    gap: 0.5em; /* Espace entre les logos */
-    max-width: 100%; /* S'adapte à la largeur du conteneur */
-    margin: 1em auto; /* Marge verticale */
-    text-align: center; /* Centre le contenu */
-}
 
-.logo {
-    height: 50px; 
-    width: auto; /* Garde les proportions */
-    display: inline-block; /* Comportement en ligne */
-    vertical-align: middle; /* Alignement vertical */
-    margin: 0 0.2em; /* Espacement horizontal */
-    opacity: 0.8;
-}
