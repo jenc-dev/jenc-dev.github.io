@@ -1,2 +1,7 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+# page de demonstration du gabarit, sans interet pour les visiteurs
+Disallow: /elements.html
+
+Sitemap: https://jennifercharvolin.com/sitemap.xml
