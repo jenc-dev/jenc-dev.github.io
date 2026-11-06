@@ -118,12 +118,8 @@ ul{list-style:none;padding:0}
 .btn--gold{background:var(--gold-strong);color:var(--ink)}
 .btn--gold:hover{background:#c29d2b}
 
-.quote-panel{flex:none;width:368px;align-self:stretch;background:var(--olive);color:var(--on-olive);
-  padding:clamp(28px,3vw,40px) clamp(24px,2.5vw,34px);display:flex;flex-direction:column;justify-content:space-between;gap:2rem}
-.quote-panel blockquote{margin:0;font-family:var(--serif);font-style:italic;font-weight:300;
-  font-size:clamp(1.4375rem,2.1vw,1.75rem);line-height:1.32}
-.quote-panel cite{font-family:var(--mono);font-size:.5625rem;letter-spacing:.12em;text-transform:uppercase;font-style:normal;color:#8b9a7c}
-.quote-panel .label{color:#cbb27a}
+.photo-panel{flex:none;width:368px;align-self:stretch;margin:0}
+.photo-panel img{width:100%;height:100%;object-fit:cover;display:block}
 
 .grid4{margin:2.75rem 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2rem}
 .grid4 li{border-top:2px solid var(--gold);padding-top:1.125rem}
@@ -160,8 +156,8 @@ ul{list-style:none;padding:0}
 
 /* ---------- Tablette ---------- */
 @media (max-width:1100px){
-  .quote-panel{width:300px}
-  .grid4{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.75rem}
+  .photo-panel{width:300px}
+  .photo-panel{width:auto;align-self:stretch}
 }
 
 /* ---------- Téléphone ---------- */
@@ -284,10 +280,8 @@ ul{list-style:none;padding:0}
         </a>
       </div>
 
-      <figure class="quote-panel">
-        <p class="label">Extrait</p>
-        <blockquote>«&nbsp;Parce que la confiance, ça ne vient pas quand tout est parfait. Ça vient quand on agit malgré l'imperfection et le doute.&nbsp;»</blockquote>
-        <figcaption><cite>50 tactiques mentales pour exceller sans s'épuiser</cite></figcaption>
+      <figure class="photo-panel">
+      <img src="images/livre-couverture.jpg" width="760" height="960" alt="Couverture du livre 50 tactiques mentales pour exceller sans s'épuiser" loading="lazy" />
       </figure>
     </div>
   </section>
